@@ -17,7 +17,7 @@ class RestaurantTest {
         LocalTime closingTime = LocalTime.parse("23:50:00");
         restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
         boolean restaurantTimings = restaurant.isRestaurantOpen();
-        assertEquals(restaurantTimings,true);
+        assertEquals(true,restaurantTimings);
     }
 
     @Test
