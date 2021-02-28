@@ -18,15 +18,14 @@ public class Restaurant {
     }
 
     public boolean isRestaurantOpen() {
-        LocalTime currentTime=LocalTime.now();
-
-        if ((currentTime.isAfter(openingTime)) && (currentTime.isBefore(closingTime))){
-        System.out.println("open");
-            System.out.println(currentTime);
-        return true;}
-        else{System.out.println("close");
-            System.out.println(currentTime);
-            return false;}
+       if ((getCurrentTime().isAfter(openingTime)) && (getCurrentTime().isBefore(closingTime))){
+           System.out.println("open");
+           return true;
+       }
+        else{
+            System.out.println("close");
+            return false;
+        }
     }
 
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
