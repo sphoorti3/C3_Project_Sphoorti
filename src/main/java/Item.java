@@ -11,7 +11,8 @@ public class Item {
         return name;
     }
     
-    public int getPrice() {
+    public int getPrice() 
+    {
         return price;
     }
     
