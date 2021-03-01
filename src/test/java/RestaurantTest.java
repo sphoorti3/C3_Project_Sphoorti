@@ -83,7 +83,7 @@ class RestaurantTest {
         restaurant.addToMenu("Sizzling brownie", 319);
         restaurant.addToMenu("Chilly Chicken", 500);
         restaurant.addToMenu("Sizzling brownie with Icecream", 19);
-        restaurant.getMenu().subList(1, 3).clear();
+        restaurant.getNewList().subList(1, 3).clear();
         assertEquals(638, restaurant.orderValue());
     }
     //<<<<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
