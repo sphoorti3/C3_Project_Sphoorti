@@ -81,7 +81,7 @@ class RestaurantTest {
         restaurant.addToMenu("Sweet corn soup", 119);
         restaurant.addToMenu("Vegetable lasagne", 269);
         restaurant.addToMenu("Sizzling brownie", 319);
-        assertEquals(0, restaurant.orderValue());
+        assertEquals(707, restaurant.orderValue());
         
     }
     //<<<<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
