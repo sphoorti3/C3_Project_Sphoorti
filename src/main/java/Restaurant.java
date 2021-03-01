@@ -70,7 +70,8 @@ public class Restaurant {
     
     public int orderValue() {
         int totalPrice = 0;
-        for (int i = 0; i < menu.size(); i++) {
+        for (int i = 0; i < menu.size(); i++)
+        {
             totalPrice += menu.get(i).getPrice();
         }
         return totalPrice;
